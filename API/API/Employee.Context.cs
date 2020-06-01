@@ -34,8 +34,7 @@ namespace API
         public virtual DbSet<NextMonth> NextMonth { get; set; }
         public virtual DbSet<Vacation> Vacation { get; set; }
     
-        public virtual int AddNewUser(string fullName, string phone, string email,
-            string password, string category, Nullable<double> exp, string guid)
+        public virtual int AddNewUser(string fullName, string phone, string email, string password, string category, Nullable<double> exp, string guid)
         {
             var fullNameParameter = fullName != null ?
                 new ObjectParameter("fullName", fullName) :

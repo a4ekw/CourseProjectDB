@@ -1,10 +1,6 @@
 ﻿using API.Filters;
 using API.Models;
 using System;
-using System.Data.Entity.Infrastructure;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Net;
 using System.Web.Http;
 
 namespace API.Controllers
@@ -53,7 +49,7 @@ namespace API.Controllers
             }
             return Ok(db.AddNewUser(newEmployee.FullName, newEmployee.Phone, newEmployee.Email,
                 newEmployee.Password, newEmployee.Category, newEmployee.Exp, Guid.NewGuid().ToString()));
-        }       
+        }
 
         protected override void Dispose(bool disposing)
         {
