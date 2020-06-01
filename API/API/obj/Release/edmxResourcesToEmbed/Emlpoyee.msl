@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище EmployeesContainer" CdmEntityContainer="ProjectEntities">
+    <EntitySetMapping Name="EmployeeClass">
+      <EntityTypeMapping TypeName="Employees.EmployeeClass">
+        <MappingFragment StoreEntitySet="EmployeeClass">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeData">
+      <EntityTypeMapping TypeName="Employees.EmployeeData">
+        <MappingFragment StoreEntitySet="EmployeeData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LastMonth">
+      <EntityTypeMapping TypeName="Employees.LastMonth">
+        <MappingFragment StoreEntitySet="LastMonth">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Day1" ColumnName="Day1" />
+          <ScalarProperty Name="Day2" ColumnName="Day2" />
+          <ScalarProperty Name="Day3" ColumnName="Day3" />
+          <ScalarProperty Name="Day4" ColumnName="Day4" />
+          <ScalarProperty Name="Day5" ColumnName="Day5" />
+          <ScalarProperty Name="Day6" ColumnName="Day6" />
+          <ScalarProperty Name="Day7" ColumnName="Day7" />
+          <ScalarProperty Name="Day8" ColumnName="Day8" />
+          <ScalarProperty Name="Day9" ColumnName="Day9" />
+          <ScalarProperty Name="Day10" ColumnName="Day10" />
+          <ScalarProperty Name="Day11" ColumnName="Day11" />
+          <ScalarProperty Name="Day12" ColumnName="Day12" />
+          <ScalarProperty Name="Day13" ColumnName="Day13" />
+          <ScalarProperty Name="Day14" ColumnName="Day14" />
+          <ScalarProperty Name="Day15" ColumnName="Day15" />
+          <ScalarProperty Name="Day16" ColumnName="Day16" />
+          <ScalarProperty Name="Day17" ColumnName="Day17" />
+          <ScalarProperty Name="Day18" ColumnName="Day18" />
+          <ScalarProperty Name="Day19" ColumnName="Day19" />
+          <ScalarProperty Name="Day20" ColumnName="Day20" />
+          <ScalarProperty Name="Day21" ColumnName="Day21" />
+          <ScalarProperty Name="Day22" ColumnName="Day22" />
+          <ScalarProperty Name="Day23" ColumnName="Day23" />
+          <ScalarProperty Name="Day24" ColumnName="Day24" />
+          <ScalarProperty Name="Day25" ColumnName="Day25" />
+          <ScalarProperty Name="Day26" ColumnName="Day26" />
+          <ScalarProperty Name="Day27" ColumnName="Day27" />
+          <ScalarProperty Name="Day28" ColumnName="Day28" />
+          <ScalarProperty Name="Day29" ColumnName="Day29" />
+          <ScalarProperty Name="Day30" ColumnName="Day30" />
+          <ScalarProperty Name="Day31" ColumnName="Day31" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Month">
+      <EntityTypeMapping TypeName="Employees.Month">
+        <MappingFragment StoreEntitySet="Month">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Day1" ColumnName="Day1" />
+          <ScalarProperty Name="Day2" ColumnName="Day2" />
+          <ScalarProperty Name="Day3" ColumnName="Day3" />
+          <ScalarProperty Name="Day4" ColumnName="Day4" />
+          <ScalarProperty Name="Day5" ColumnName="Day5" />
+          <ScalarProperty Name="Day6" ColumnName="Day6" />
+          <ScalarProperty Name="Day7" ColumnName="Day7" />
+          <ScalarProperty Name="Day8" ColumnName="Day8" />
+          <ScalarProperty Name="Day9" ColumnName="Day9" />
+          <ScalarProperty Name="Day10" ColumnName="Day10" />
+          <ScalarProperty Name="Day11" ColumnName="Day11" />
+          <ScalarProperty Name="Day12" ColumnName="Day12" />
+          <ScalarProperty Name="Day13" ColumnName="Day13" />
+          <ScalarProperty Name="Day14" ColumnName="Day14" />
+          <ScalarProperty Name="Day15" ColumnName="Day15" />
+          <ScalarProperty Name="Day16" ColumnName="Day16" />
+          <ScalarProperty Name="Day17" ColumnName="Day17" />
+          <ScalarProperty Name="Day18" ColumnName="Day18" />
+          <ScalarProperty Name="Day19" ColumnName="Day19" />
+          <ScalarProperty Name="Day20" ColumnName="Day20" />
+          <ScalarProperty Name="Day21" ColumnName="Day21" />
+          <ScalarProperty Name="Day22" ColumnName="Day22" />
+          <ScalarProperty Name="Day23" ColumnName="Day23" />
+          <ScalarProperty Name="Day24" ColumnName="Day24" />
+          <ScalarProperty Name="Day25" ColumnName="Day25" />
+          <ScalarProperty Name="Day26" ColumnName="Day26" />
+          <ScalarProperty Name="Day27" ColumnName="Day27" />
+          <ScalarProperty Name="Day28" ColumnName="Day28" />
+          <ScalarProperty Name="Day29" ColumnName="Day29" />
+          <ScalarProperty Name="Day30" ColumnName="Day30" />
+          <ScalarProperty Name="Day31" ColumnName="Day31" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NextMonth">
+      <EntityTypeMapping TypeName="Employees.NextMonth">
+        <MappingFragment StoreEntitySet="NextMonth">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Day1" ColumnName="Day1" />
+          <ScalarProperty Name="Day2" ColumnName="Day2" />
+          <ScalarProperty Name="Day3" ColumnName="Day3" />
+          <ScalarProperty Name="Day4" ColumnName="Day4" />
+          <ScalarProperty Name="Day5" ColumnName="Day5" />
+          <ScalarProperty Name="Day6" ColumnName="Day6" />
+          <ScalarProperty Name="Day7" ColumnName="Day7" />
+          <ScalarProperty Name="Day8" ColumnName="Day8" />
+          <ScalarProperty Name="Day9" ColumnName="Day9" />
+          <ScalarProperty Name="Day10" ColumnName="Day10" />
+          <ScalarProperty Name="Day11" ColumnName="Day11" />
+          <ScalarProperty Name="Day12" ColumnName="Day12" />
+          <ScalarProperty Name="Day13" ColumnName="Day13" />
+          <ScalarProperty Name="Day14" ColumnName="Day14" />
+          <ScalarProperty Name="Day15" ColumnName="Day15" />
+          <ScalarProperty Name="Day16" ColumnName="Day16" />
+          <ScalarProperty Name="Day17" ColumnName="Day17" />
+          <ScalarProperty Name="Day18" ColumnName="Day18" />
+          <ScalarProperty Name="Day19" ColumnName="Day19" />
+          <ScalarProperty Name="Day20" ColumnName="Day20" />
+          <ScalarProperty Name="Day21" ColumnName="Day21" />
+          <ScalarProperty Name="Day22" ColumnName="Day22" />
+          <ScalarProperty Name="Day23" ColumnName="Day23" />
+          <ScalarProperty Name="Day24" ColumnName="Day24" />
+          <ScalarProperty Name="Day25" ColumnName="Day25" />
+          <ScalarProperty Name="Day26" ColumnName="Day26" />
+          <ScalarProperty Name="Day27" ColumnName="Day27" />
+          <ScalarProperty Name="Day28" ColumnName="Day28" />
+          <ScalarProperty Name="Day29" ColumnName="Day29" />
+          <ScalarProperty Name="Day30" ColumnName="Day30" />
+          <ScalarProperty Name="Day31" ColumnName="Day31" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vacation">
+      <EntityTypeMapping TypeName="Employees.Vacation">
+        <MappingFragment StoreEntitySet="Vacation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

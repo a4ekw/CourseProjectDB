@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f5280b35149248f1af677a8453dc970c" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjectModel.EmployeeClass" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.EmployeeData" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.LastMonth" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.Month" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.NextMonth" Width="1.5" PointX="3" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.Vacation" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <AssociationConnector Association="ProjectModel.FK_EmployeeClass_EmployeeData" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectModel.FK_LastMonth_EmployeeData" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectModel.FK_Month_EmployeeData" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectModel.FK_NextMonth_EmployeeData" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectModel.FK_Vacation_EmployeeData" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

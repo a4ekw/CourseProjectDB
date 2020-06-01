@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\IIS</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>05/16/2020 16:00:35</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>05/16/2020 16:00:35</publishTime>
+    </File>
+    <File Include="bin/BasicAuthentication.dll">
+      <publishTime>05/16/2020 16:00:29</publishTime>
+    </File>
+    <File Include="bin/BasicAuthentication.pdb">
+      <publishTime>05/16/2020 16:00:29</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>09/11/2013 02:09:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>09/11/2013 02:09:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/18/2019 20:50:30</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>08/26/2014 04:33:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>08/26/2014 04:34:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>08/26/2014 04:35:36</publishTime>
+    </File>
+    <File Include="Employee.edmx.diagram">
+      <publishTime>05/07/2020 22:56:24</publishTime>
+    </File>
+    <File Include="Employees.edmx.diagram">
+      <publishTime>05/06/2020 19:30:26</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/05/2020 19:21:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/05/2020 22:08:58</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>05/16/2020 16:00:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/16/2020 16:00:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

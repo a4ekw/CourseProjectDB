@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище ProjectModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EmployeeClass">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Experience" Type="float" />
+          <Property Name="Hours" Type="int" />
+        </EntityType>
+        <EntityType Name="EmployeeData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LastMonth">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Day1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day5" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day6" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day7" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day8" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day9" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day10" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day11" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day12" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day13" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day14" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day15" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day16" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day17" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day18" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day19" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day20" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day21" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day22" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day23" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day24" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day25" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day26" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day27" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day28" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day29" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day30" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day31" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Month">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Day1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day5" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day6" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day7" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day8" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day9" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day10" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day11" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day12" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day13" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day14" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day15" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day16" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day17" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day18" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day19" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day20" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day21" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day22" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day23" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day24" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day25" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day26" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day27" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day28" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day29" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day30" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day31" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NextMonth">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Day1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day5" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day6" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day7" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day8" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day9" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day10" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day11" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day12" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day13" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day14" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day15" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day16" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day17" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day18" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day19" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day20" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day21" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day22" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day23" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day24" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day25" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day26" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day27" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day28" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day29" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day30" Type="nvarchar" MaxLength="50" />
+          <Property Name="Day31" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Vacation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Date" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_EmployeeClass_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EmployeeClass" Type="Self.EmployeeClass" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeClass">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LastMonth_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LastMonth" Type="Self.LastMonth" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LastMonth">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Month_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Month" Type="Self.Month" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Month">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NextMonth_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="NextMonth" Type="Self.NextMonth" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NextMonth">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vacation_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Vacation" Type="Self.Vacation" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Vacation">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="AddNewUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fullName" Type="nvarchar" Mode="In" />
+          <Parameter Name="phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="category" Type="nvarchar" Mode="In" />
+          <Parameter Name="exp" Type="float" Mode="In" />
+          <Parameter Name="guid" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ChangeFS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="nvarchar" Mode="In" />
+          <Parameter Name="day" Type="nvarchar" Mode="In" />
+          <Parameter Name="month" Type="nvarchar" Mode="In" />
+          <Parameter Name="value" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Хранилище ProjectModelContainer">
+          <EntitySet Name="EmployeeClass" EntityType="Self.EmployeeClass" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeData" EntityType="Self.EmployeeData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LastMonth" EntityType="Self.LastMonth" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Month" EntityType="Self.Month" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NextMonth" EntityType="Self.NextMonth" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vacation" EntityType="Self.Vacation" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_EmployeeClass_EmployeeData" Association="Self.FK_EmployeeClass_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="EmployeeClass" EntitySet="EmployeeClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LastMonth_EmployeeData" Association="Self.FK_LastMonth_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="LastMonth" EntitySet="LastMonth" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Month_EmployeeData" Association="Self.FK_Month_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="Month" EntitySet="Month" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NextMonth_EmployeeData" Association="Self.FK_NextMonth_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="NextMonth" EntitySet="NextMonth" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vacation_EmployeeData" Association="Self.FK_Vacation_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="Vacation" EntitySet="Vacation" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EmployeeClass">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Experience" Type="Double" />
+          <Property Name="Hours" Type="Int32" />
+          <NavigationProperty Name="EmployeeData" Relationship="Self.FK_EmployeeClass_EmployeeData" FromRole="EmployeeClass" ToRole="EmployeeData" />
+        </EntityType>
+        <EntityType Name="EmployeeData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmployeeClass" Relationship="Self.FK_EmployeeClass_EmployeeData" FromRole="EmployeeData" ToRole="EmployeeClass" />
+          <NavigationProperty Name="LastMonth" Relationship="Self.FK_LastMonth_EmployeeData" FromRole="EmployeeData" ToRole="LastMonth" />
+          <NavigationProperty Name="Month" Relationship="Self.FK_Month_EmployeeData" FromRole="EmployeeData" ToRole="Month" />
+          <NavigationProperty Name="NextMonth" Relationship="Self.FK_NextMonth_EmployeeData" FromRole="EmployeeData" ToRole="NextMonth" />
+          <NavigationProperty Name="Vacation" Relationship="Self.FK_Vacation_EmployeeData" FromRole="EmployeeData" ToRole="Vacation" />
+        </EntityType>
+        <EntityType Name="LastMonth">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmployeeData" Relationship="Self.FK_LastMonth_EmployeeData" FromRole="LastMonth" ToRole="EmployeeData" />
+        </EntityType>
+        <EntityType Name="Month">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmployeeData" Relationship="Self.FK_Month_EmployeeData" FromRole="Month" ToRole="EmployeeData" />
+        </EntityType>
+        <EntityType Name="NextMonth">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmployeeData" Relationship="Self.FK_NextMonth_EmployeeData" FromRole="NextMonth" ToRole="EmployeeData" />
+        </EntityType>
+        <EntityType Name="Vacation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmployeeData" Relationship="Self.FK_Vacation_EmployeeData" FromRole="Vacation" ToRole="EmployeeData" />
+        </EntityType>
+        <Association Name="FK_EmployeeClass_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EmployeeClass" Type="Self.EmployeeClass" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeClass">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LastMonth_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LastMonth" Type="Self.LastMonth" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LastMonth">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Month_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Month" Type="Self.Month" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Month">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NextMonth_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="NextMonth" Type="Self.NextMonth" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NextMonth">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vacation_EmployeeData">
+          <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Vacation" Type="Self.Vacation" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeData">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Vacation">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EmployeeClass" EntityType="Self.EmployeeClass" />
+          <EntitySet Name="EmployeeData" EntityType="Self.EmployeeData" />
+          <EntitySet Name="LastMonth" EntityType="Self.LastMonth" />
+          <EntitySet Name="Month" EntityType="Self.Month" />
+          <EntitySet Name="NextMonth" EntityType="Self.NextMonth" />
+          <EntitySet Name="Vacation" EntityType="Self.Vacation" />
+          <AssociationSet Name="FK_EmployeeClass_EmployeeData" Association="Self.FK_EmployeeClass_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="EmployeeClass" EntitySet="EmployeeClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LastMonth_EmployeeData" Association="Self.FK_LastMonth_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="LastMonth" EntitySet="LastMonth" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Month_EmployeeData" Association="Self.FK_Month_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="Month" EntitySet="Month" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NextMonth_EmployeeData" Association="Self.FK_NextMonth_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="NextMonth" EntitySet="NextMonth" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vacation_EmployeeData" Association="Self.FK_Vacation_EmployeeData">
+            <End Role="EmployeeData" EntitySet="EmployeeData" />
+            <End Role="Vacation" EntitySet="Vacation" />
+          </AssociationSet>
+          <FunctionImport Name="AddNewUser">
+            <Parameter Name="fullName" Mode="In" Type="String" />
+            <Parameter Name="phone" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="category" Mode="In" Type="String" />
+            <Parameter Name="exp" Mode="In" Type="Double" />
+            <Parameter Name="guid" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ChangeFS">
+            <Parameter Name="id" Mode="In" Type="String" />
+            <Parameter Name="day" Mode="In" Type="String" />
+            <Parameter Name="month" Mode="In" Type="String" />
+            <Parameter Name="value" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ProjectModelContainer" CdmEntityContainer="ProjectEntities">
+          <EntitySetMapping Name="EmployeeClass">
+            <EntityTypeMapping TypeName="ProjectModel.EmployeeClass">
+              <MappingFragment StoreEntitySet="EmployeeClass">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Experience" ColumnName="Experience" />
+                <ScalarProperty Name="Hours" ColumnName="Hours" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeData">
+            <EntityTypeMapping TypeName="ProjectModel.EmployeeData">
+              <MappingFragment StoreEntitySet="EmployeeData">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LastMonth">
+            <EntityTypeMapping TypeName="ProjectModel.LastMonth">
+              <MappingFragment StoreEntitySet="LastMonth">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Day1" ColumnName="Day1" />
+                <ScalarProperty Name="Day2" ColumnName="Day2" />
+                <ScalarProperty Name="Day3" ColumnName="Day3" />
+                <ScalarProperty Name="Day4" ColumnName="Day4" />
+                <ScalarProperty Name="Day5" ColumnName="Day5" />
+                <ScalarProperty Name="Day6" ColumnName="Day6" />
+                <ScalarProperty Name="Day7" ColumnName="Day7" />
+                <ScalarProperty Name="Day8" ColumnName="Day8" />
+                <ScalarProperty Name="Day9" ColumnName="Day9" />
+                <ScalarProperty Name="Day10" ColumnName="Day10" />
+                <ScalarProperty Name="Day11" ColumnName="Day11" />
+                <ScalarProperty Name="Day12" ColumnName="Day12" />
+                <ScalarProperty Name="Day13" ColumnName="Day13" />
+                <ScalarProperty Name="Day14" ColumnName="Day14" />
+                <ScalarProperty Name="Day15" ColumnName="Day15" />
+                <ScalarProperty Name="Day16" ColumnName="Day16" />
+                <ScalarProperty Name="Day17" ColumnName="Day17" />
+                <ScalarProperty Name="Day18" ColumnName="Day18" />
+                <ScalarProperty Name="Day19" ColumnName="Day19" />
+                <ScalarProperty Name="Day20" ColumnName="Day20" />
+                <ScalarProperty Name="Day21" ColumnName="Day21" />
+                <ScalarProperty Name="Day22" ColumnName="Day22" />
+                <ScalarProperty Name="Day23" ColumnName="Day23" />
+                <ScalarProperty Name="Day24" ColumnName="Day24" />
+                <ScalarProperty Name="Day25" ColumnName="Day25" />
+                <ScalarProperty Name="Day26" ColumnName="Day26" />
+                <ScalarProperty Name="Day27" ColumnName="Day27" />
+                <ScalarProperty Name="Day28" ColumnName="Day28" />
+                <ScalarProperty Name="Day29" ColumnName="Day29" />
+                <ScalarProperty Name="Day30" ColumnName="Day30" />
+                <ScalarProperty Name="Day31" ColumnName="Day31" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Month">
+            <EntityTypeMapping TypeName="ProjectModel.Month">
+              <MappingFragment StoreEntitySet="Month">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Day1" ColumnName="Day1" />
+                <ScalarProperty Name="Day2" ColumnName="Day2" />
+                <ScalarProperty Name="Day3" ColumnName="Day3" />
+                <ScalarProperty Name="Day4" ColumnName="Day4" />
+                <ScalarProperty Name="Day5" ColumnName="Day5" />
+                <ScalarProperty Name="Day6" ColumnName="Day6" />
+                <ScalarProperty Name="Day7" ColumnName="Day7" />
+                <ScalarProperty Name="Day8" ColumnName="Day8" />
+                <ScalarProperty Name="Day9" ColumnName="Day9" />
+                <ScalarProperty Name="Day10" ColumnName="Day10" />
+                <ScalarProperty Name="Day11" ColumnName="Day11" />
+                <ScalarProperty Name="Day12" ColumnName="Day12" />
+                <ScalarProperty Name="Day13" ColumnName="Day13" />
+                <ScalarProperty Name="Day14" ColumnName="Day14" />
+                <ScalarProperty Name="Day15" ColumnName="Day15" />
+                <ScalarProperty Name="Day16" ColumnName="Day16" />
+                <ScalarProperty Name="Day17" ColumnName="Day17" />
+                <ScalarProperty Name="Day18" ColumnName="Day18" />
+                <ScalarProperty Name="Day19" ColumnName="Day19" />
+                <ScalarProperty Name="Day20" ColumnName="Day20" />
+                <ScalarProperty Name="Day21" ColumnName="Day21" />
+                <ScalarProperty Name="Day22" ColumnName="Day22" />
+                <ScalarProperty Name="Day23" ColumnName="Day23" />
+                <ScalarProperty Name="Day24" ColumnName="Day24" />
+                <ScalarProperty Name="Day25" ColumnName="Day25" />
+                <ScalarProperty Name="Day26" ColumnName="Day26" />
+                <ScalarProperty Name="Day27" ColumnName="Day27" />
+                <ScalarProperty Name="Day28" ColumnName="Day28" />
+                <ScalarProperty Name="Day29" ColumnName="Day29" />
+                <ScalarProperty Name="Day30" ColumnName="Day30" />
+                <ScalarProperty Name="Day31" ColumnName="Day31" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NextMonth">
+            <EntityTypeMapping TypeName="ProjectModel.NextMonth">
+              <MappingFragment StoreEntitySet="NextMonth">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Day1" ColumnName="Day1" />
+                <ScalarProperty Name="Day2" ColumnName="Day2" />
+                <ScalarProperty Name="Day3" ColumnName="Day3" />
+                <ScalarProperty Name="Day4" ColumnName="Day4" />
+                <ScalarProperty Name="Day5" ColumnName="Day5" />
+                <ScalarProperty Name="Day6" ColumnName="Day6" />
+                <ScalarProperty Name="Day7" ColumnName="Day7" />
+                <ScalarProperty Name="Day8" ColumnName="Day8" />
+                <ScalarProperty Name="Day9" ColumnName="Day9" />
+                <ScalarProperty Name="Day10" ColumnName="Day10" />
+                <ScalarProperty Name="Day11" ColumnName="Day11" />
+                <ScalarProperty Name="Day12" ColumnName="Day12" />
+                <ScalarProperty Name="Day13" ColumnName="Day13" />
+                <ScalarProperty Name="Day14" ColumnName="Day14" />
+                <ScalarProperty Name="Day15" ColumnName="Day15" />
+                <ScalarProperty Name="Day16" ColumnName="Day16" />
+                <ScalarProperty Name="Day17" ColumnName="Day17" />
+                <ScalarProperty Name="Day18" ColumnName="Day18" />
+                <ScalarProperty Name="Day19" ColumnName="Day19" />
+                <ScalarProperty Name="Day20" ColumnName="Day20" />
+                <ScalarProperty Name="Day21" ColumnName="Day21" />
+                <ScalarProperty Name="Day22" ColumnName="Day22" />
+                <ScalarProperty Name="Day23" ColumnName="Day23" />
+                <ScalarProperty Name="Day24" ColumnName="Day24" />
+                <ScalarProperty Name="Day25" ColumnName="Day25" />
+                <ScalarProperty Name="Day26" ColumnName="Day26" />
+                <ScalarProperty Name="Day27" ColumnName="Day27" />
+                <ScalarProperty Name="Day28" ColumnName="Day28" />
+                <ScalarProperty Name="Day29" ColumnName="Day29" />
+                <ScalarProperty Name="Day30" ColumnName="Day30" />
+                <ScalarProperty Name="Day31" ColumnName="Day31" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vacation">
+            <EntityTypeMapping TypeName="ProjectModel.Vacation">
+              <MappingFragment StoreEntitySet="Vacation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AddNewUser" FunctionName="Хранилище ProjectModel.AddNewUser" />
+          <FunctionImportMapping FunctionImportName="ChangeFS" FunctionName="Хранилище ProjectModel.ChangeFS" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "194273272341",
+    "firebase_url": "https://project-b58e4.firebaseio.com",
+    "project_id": "project-b58e4",
+    "storage_bucket": "project-b58e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194273272341:android:b320c2b639aefb9514e41c",
+        "android_client_info": {
+          "package_name": "bstu.lensky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194273272341-dd8a3k9sh6k3ol64lvh7l4am13s2o64u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcVWUF1UIgT41gPMlcggtiej9zgJCPw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194273272341-dd8a3k9sh6k3ol64lvh7l4am13s2o64u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

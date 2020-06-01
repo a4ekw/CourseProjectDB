@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmployeeClass">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Experience" Type="Double" />
+    <Property Name="Hours" Type="Int32" />
+    <NavigationProperty Name="EmployeeData" Relationship="Self.FK_EmployeeClass_EmployeeData" FromRole="EmployeeClass" ToRole="EmployeeData" />
+  </EntityType>
+  <EntityType Name="EmployeeData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EmployeeClass" Relationship="Self.FK_EmployeeClass_EmployeeData" FromRole="EmployeeData" ToRole="EmployeeClass" />
+    <NavigationProperty Name="LastMonth" Relationship="Self.FK_LastMonth_EmployeeData" FromRole="EmployeeData" ToRole="LastMonth" />
+    <NavigationProperty Name="Month" Relationship="Self.FK_Month_EmployeeData" FromRole="EmployeeData" ToRole="Month" />
+    <NavigationProperty Name="NextMonth" Relationship="Self.FK_NextMonth_EmployeeData" FromRole="EmployeeData" ToRole="NextMonth" />
+    <NavigationProperty Name="Vacation" Relationship="Self.FK_Vacation_EmployeeData" FromRole="EmployeeData" ToRole="Vacation" />
+  </EntityType>
+  <EntityType Name="LastMonth">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EmployeeData" Relationship="Self.FK_LastMonth_EmployeeData" FromRole="LastMonth" ToRole="EmployeeData" />
+  </EntityType>
+  <EntityType Name="Month">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EmployeeData" Relationship="Self.FK_Month_EmployeeData" FromRole="Month" ToRole="EmployeeData" />
+  </EntityType>
+  <EntityType Name="NextMonth">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Day1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Day2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day21" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day22" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day25" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day26" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day27" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day29" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Day31" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EmployeeData" Relationship="Self.FK_NextMonth_EmployeeData" FromRole="NextMonth" ToRole="EmployeeData" />
+  </EntityType>
+  <EntityType Name="Vacation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EmployeeData" Relationship="Self.FK_Vacation_EmployeeData" FromRole="Vacation" ToRole="EmployeeData" />
+  </EntityType>
+  <Association Name="FK_EmployeeClass_EmployeeData">
+    <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmployeeClass" Type="Self.EmployeeClass" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeData">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EmployeeClass">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LastMonth_EmployeeData">
+    <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LastMonth" Type="Self.LastMonth" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeData">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="LastMonth">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Month_EmployeeData">
+    <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Month" Type="Self.Month" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeData">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Month">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NextMonth_EmployeeData">
+    <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="NextMonth" Type="Self.NextMonth" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeData">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NextMonth">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vacation_EmployeeData">
+    <End Role="EmployeeData" Type="Self.EmployeeData" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Vacation" Type="Self.Vacation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeData">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vacation">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmployeeClass" EntityType="Self.EmployeeClass" />
+    <EntitySet Name="EmployeeData" EntityType="Self.EmployeeData" />
+    <EntitySet Name="LastMonth" EntityType="Self.LastMonth" />
+    <EntitySet Name="Month" EntityType="Self.Month" />
+    <EntitySet Name="NextMonth" EntityType="Self.NextMonth" />
+    <EntitySet Name="Vacation" EntityType="Self.Vacation" />
+    <AssociationSet Name="FK_EmployeeClass_EmployeeData" Association="Self.FK_EmployeeClass_EmployeeData">
+      <End Role="EmployeeData" EntitySet="EmployeeData" />
+      <End Role="EmployeeClass" EntitySet="EmployeeClass" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LastMonth_EmployeeData" Association="Self.FK_LastMonth_EmployeeData">
+      <End Role="EmployeeData" EntitySet="EmployeeData" />
+      <End Role="LastMonth" EntitySet="LastMonth" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Month_EmployeeData" Association="Self.FK_Month_EmployeeData">
+      <End Role="EmployeeData" EntitySet="EmployeeData" />
+      <End Role="Month" EntitySet="Month" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NextMonth_EmployeeData" Association="Self.FK_NextMonth_EmployeeData">
+      <End Role="EmployeeData" EntitySet="EmployeeData" />
+      <End Role="NextMonth" EntitySet="NextMonth" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vacation_EmployeeData" Association="Self.FK_Vacation_EmployeeData">
+      <End Role="EmployeeData" EntitySet="EmployeeData" />
+      <End Role="Vacation" EntitySet="Vacation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
