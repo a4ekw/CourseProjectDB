@@ -13,11 +13,10 @@ using System.Web.Http.Description;
 namespace API.Controllers
 {
     [IdentityAPI]
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class EmployeeDatasController : ApiController
     {
         private ProjectEntities db = new ProjectEntities();
-
 
         [HttpGet]
         public IEnumerable<EmployeeData> GetEmployeeData()
@@ -37,6 +36,7 @@ namespace API.Controllers
             return Ok(employeeData);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public IHttpActionResult PutEmployeeData(int id, EmployeeData employeeData)
         {
@@ -71,6 +71,7 @@ namespace API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IHttpActionResult PostEmployeeData(EmployeeData employeeData)
         {
@@ -85,6 +86,7 @@ namespace API.Controllers
             return CreatedAtRoute("DefaultApi", new { id = employeeData.Id }, employeeData);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         public IHttpActionResult DeleteEmployeeData(int id)
         {

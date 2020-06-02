@@ -322,8 +322,10 @@ class _ViewState extends State<View> with SingleTickerProviderStateMixin {
     _selectedDay = date;
     _selectedEvents = _events[_selectedDay] ?? [];
     try {
-      event = _selectedDay.toString().substring(0, 10) + ': ' +
-          _selectedEvents[0]['name'];
+      String mm = _selectedEvents[0]['name'];
+      if(mm.length <= 4)
+        mm = mm + '0';
+      event = _selectedDay.toString().substring(0, 10) + ': ' + mm;
       if (_selectedEvents[0].toString().contains('true')) {
         event += '   (Done)';
         style =

@@ -12,8 +12,9 @@ using API.Filters;
 
 namespace API.Controllers
 {
+
+    [AllowAnonymous]
     [IdentityAPI]
-    [Authorize(Roles = "Admin")]
     public class EmployeeClassesController : ApiController
     {
         private ProjectEntities db = new ProjectEntities();
@@ -37,6 +38,7 @@ namespace API.Controllers
             return Ok(employeeClass);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public IHttpActionResult PutEmployeeClass(int id, EmployeeClass employeeClass)
         {
@@ -71,6 +73,7 @@ namespace API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IHttpActionResult PostEmployeeClass(EmployeeClass employeeClass)
         {
@@ -100,6 +103,7 @@ namespace API.Controllers
             return CreatedAtRoute("DefaultApi", new { id = employeeClass.Id }, employeeClass);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         public IHttpActionResult DeleteEmployeeClass(int id)
         {

@@ -57,7 +57,7 @@ class _NewEmployeeState extends State<NewEmployee> {
         return AlertDialog(
           title: Text('Confirm action'),
           content: const Text(
-              'Add a new employee??'),
+              'Add a new employee?'),
           actions: <Widget>[
             FlatButton(
               child: Text('No'),
@@ -88,7 +88,7 @@ class _NewEmployeeState extends State<NewEmployee> {
           "FullName": name + ' ' + surname,
           "Phone": phone,
           "Email": email,
-          "Password": md5.convert(utf8.encode(password)).toString(),
+          "Password": password,
           "Category": dropdownC,
           "Exp": dropdownE,
         };

@@ -1,5 +1,6 @@
 ﻿using API.Filters;
 using API.Models;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Web.Http;
 
@@ -48,7 +49,7 @@ namespace API.Controllers
                 return BadRequest(ModelState);
             }
             return Ok(db.AddNewUser(newEmployee.FullName, newEmployee.Phone, newEmployee.Email,
-                newEmployee.Password, newEmployee.Category, newEmployee.Exp, Guid.NewGuid().ToString()));
+                new PasswordHasher().HashPassword(newEmployee.Password), newEmployee.Category, newEmployee.Exp, Guid.NewGuid().ToString()));
         }
 
         protected override void Dispose(bool disposing)

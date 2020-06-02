@@ -56,7 +56,7 @@ class LastMonth extends Model{
     list.add(day2); list.add(day3); list.add(day4); list.add(day5); list.add(day6);
     list.add(day7); list.add(day8); list.add(day9); list.add(day10); list.add(day11);
     list.add(day12); list.add(day13); list.add(day14); list.add(day15); list.add(day16);
-    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day2);
+    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day21);
     list.add(day22);  list.add(day23); list.add(day24); list.add(day25); list.add(day26);
     list.add(day27); list.add(day28); list.add(day29); list.add(day30); list.add(day31);
     return list;
@@ -108,7 +108,7 @@ class Month extends Model{
     list.add(day2); list.add(day3); list.add(day4); list.add(day5); list.add(day6);
     list.add(day7); list.add(day8); list.add(day9); list.add(day10); list.add(day11);
     list.add(day12); list.add(day13); list.add(day14); list.add(day15); list.add(day16);
-    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day2);
+    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day21);
     list.add(day22);  list.add(day23); list.add(day24); list.add(day25); list.add(day26);
     list.add(day27); list.add(day28); list.add(day29); list.add(day30); list.add(day31);
     return list;
@@ -160,7 +160,7 @@ class NextMonth extends Model{
     list.add(day2); list.add(day3); list.add(day4); list.add(day5); list.add(day6);
     list.add(day7); list.add(day8); list.add(day9); list.add(day10); list.add(day11);
     list.add(day12); list.add(day13); list.add(day14); list.add(day15); list.add(day16);
-    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day2);
+    list.add(day17); list.add(day18); list.add(day19); list.add(day20); list.add(day21);
     list.add(day22);  list.add(day23); list.add(day24); list.add(day25); list.add(day26);
     list.add(day27); list.add(day28); list.add(day29); list.add(day30); list.add(day31);
     return list;
